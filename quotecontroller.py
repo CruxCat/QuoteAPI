@@ -40,3 +40,7 @@ class Quote(Resource):
         
         ai_quotes.append(quote)
         return quote, 201
+    def delete(self, id):
+        global ai_quotes
+        ai_quotes = [qoute for qoute in ai_quotes if qoute["id"] != id]
+        return f"Quote with id {id} is deleted.", 200
