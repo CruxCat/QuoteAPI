@@ -1,3 +1,6 @@
+from flask_restful import Resource, reqparse
+import random
+
 class Quote(Resource):
     def get(self, id=0):
         if id == 0:

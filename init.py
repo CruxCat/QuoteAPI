@@ -1,6 +1,5 @@
 from flask import Flask
-from flask_restful import Api, Resource, reqparse
-import random
+from flask_restful import Api
 from quotecontroller import Quote
 
 
