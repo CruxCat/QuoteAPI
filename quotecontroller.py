@@ -1,5 +1,6 @@
 from flask_restful import Resource, reqparse
 import random
+from data import ai_quotes
 
 class Quote(Resource):
     def get(self, id=0):
